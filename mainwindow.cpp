@@ -34,13 +34,18 @@ void MainWindow::buttonClicked()
 {
     // static関数だから、こういう呼び方ができる
     // シングルトンなので、アドレスを返却する関数
-    Earth *earth = Earth::getInstance();
+    Earth &earth = Earth::getInstance();
+
+    // コンストラクタがprivateなので生成できない
+    // コピーも無理
+    // Earth earth2 = earth;
+
     // ポインタ変数はアドレスを格納する変数なので、単体でアドレスを出力する
     // 0x1088a03c8
-    std::cout << earth << std::endl;
+    std::cout << &earth << std::endl;
 
     // *間接演算子をつけることで、ポインタを間接参照する＝値にアクセスできるようになる
-    setLabel(*earth);
+    setLabel(earth);
 }
 
 void MainWindow::setButton()

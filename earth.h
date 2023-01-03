@@ -7,14 +7,17 @@
 class Earth : public Space
 {
 public:
-    static Earth *getInstance();
+    static Earth &getInstance();
     QString getImage() const;
 
+    // コピーできないようにする
+    Earth(const Earth &x) = delete;
+    Earth &operator=(const Earth &) = delete;
+
 private:
-    Earth();
-    // コピーコンストラクタが必要
-    Earth(const Earth &x);
-    Earth &operator=(const Earth &){ return *this; };
+    Earth() = default;
+    ~Earth() = default;
+
 };
 
 #endif // EARTH_H
