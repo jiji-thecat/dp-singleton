@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>assets/sun.png</file>
+        <file>assets/chikyuu.png</file>
+        <file>assets/moon.png</file>
+    </qresource>
+</RCC>
