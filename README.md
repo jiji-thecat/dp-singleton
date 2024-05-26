@@ -2,12 +2,14 @@
 
 ## Description
 
-![singleton](https://github.com/jiji-thecat/dp-singleton/assets/104809324/ea021393-4c09-4b4f-a591-1bad4530d7f9)
+![singleton](https://github.com/jiji-thecat/dp-singleton/assets/104809324/419866cc-6248-459c-bf29-80fb15a957b9)
+
 The Singleton pattern is a design pattern used to ensure that only one instance of a class can be created.
 
 ### Class Diagram
 
-![class diagram](https://github.com/jiji-thecat/dp-singleton/assets/104809324/419866cc-6248-459c-bf29-80fb15a957b9)
+![class diagram](https://github.com/jiji-thecat/dp-singleton/assets/104809324/ea021393-4c09-4b4f-a591-1bad4530d7f9)
+
 [wiki](https://ja.wikipedia.org/wiki/Singleton_%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3)
 
 There are three key points from this diagram:
@@ -22,7 +24,7 @@ Import this project as a QT project.
 
 ## How to Use This App
 
-![singleton](https://github.com/jiji-thecat/dp-singleton/assets/104809324/ea021393-4c09-4b4f-a591-1bad4530d7f9)
+![singleton](https://github.com/jiji-thecat/dp-singleton/assets/104809324/419866cc-6248-459c-bf29-80fb15a957b9)
 
 This app attempts to generate an instance of the Earth class multiple times by pressing a button. However, since the Singleton pattern is used, it will only generate one instance. To prove this, the memory address of the instance is displayed, and it remains the same for all attempts.
 
